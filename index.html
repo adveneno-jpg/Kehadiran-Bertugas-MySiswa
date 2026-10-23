@@ -554,7 +554,7 @@
       const badge = document.getElementById('syncStatusBadge');
       if (refreshIcon) refreshIcon.classList.add('fa-spin');
       if (badge) {
-        badge.innerHTML = `<span class="w-2 h-2 mr-1.5 rounded-full bg-amber-400 animate-ping"></span>Menyambung...`;
+        badge.innerHTML = `<span class="w-2 h-2 mr-1.5 rounded-full bg-amber-400 animate-ping"></span>Connecting...`;
       }
 
       try {
@@ -567,7 +567,7 @@
             renderStaffVisualisation();
             renderRecordsTable();
             if (badge) {
-              badge.innerHTML = `<span class="w-2 h-2 mr-1.5 rounded-full bg-emerald-400"></span>Tersambung`;
+              badge.innerHTML = `<span class="w-2 h-2 mr-1.5 rounded-full bg-emerald-400"></span>Connected`;
             }
             if (isManual) showToast("Data Google Sheet berjaya disegerakkan!", "success");
           }
